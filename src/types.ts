@@ -57,6 +57,22 @@ export interface LawnMowerCardShortcut {
   target?: HassServiceTarget;
 }
 
+// A toolbar shortcut that calls a service with a user-selectable duration
+// (shown as a dropdown of hour values), e.g. Gardena's
+// `gardena_smart_system.start_override`, which expects a `duration` in
+// seconds. The integration/service is fully configurable so this isn't
+// limited to Gardena.
+export interface LawnMowerCardOverride {
+  name: string;
+  icon?: string;
+  service: string;
+  durations: number[];
+  service_data?: Record<string, unknown>;
+  duration_attribute?: string;
+  duration_seconds_per_hour?: number;
+  target?: HassServiceTarget;
+}
+
 export interface LawnMowerCardConfig {
   entity: string;
   battery_entity: string;
@@ -71,6 +87,7 @@ export interface LawnMowerCardConfig {
   stats: Record<string, LawnMowerCardStat[]>;
   actions: Record<string, LawnMowerCardAction>;
   shortcuts: LawnMowerCardShortcut[];
+  override?: LawnMowerCardOverride;
 }
 
 export interface LawnMowerServiceCallParams {

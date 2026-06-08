@@ -108,6 +108,7 @@ Here is what every option means:
 | `stats`          | `object`  | Optional     | Custom per state stats for your lawn mower                                                                 |
 | `actions`        | `object`  | Optional     | Override default actions behavior with service invocations.                                                |
 | `shortcuts`      |  `array`  | Optional     | List of shortcuts shown at the right bottom part of the card with custom actions for your lawn mower.      |
+| `override`       | `object`  | Optional     | Adds a toolbar button that calls a service with a user-selectable duration (in hours), e.g. to temporarily override your mower's schedule. See [`override` object](#override-object) below. |
 
 ### `stats` object
 
@@ -141,6 +142,32 @@ You can define [custom scripts][ha-scripts] for custom actions, e.g. mowing a sp
 | `target`       | `object` | Optional | A `HassServiceTarget`, to define a target for the current service call. |
 | `icon`         | `string` | Optional | Any icon for action button.                                             |
 | `service_data` | `object` | Optional | `service_data` for `service` call                                       |
+
+### `override` object
+
+Adds a button to the toolbar (next to your shortcuts) that opens a small menu of duration choices, in hours, and calls a service with the chosen duration — handy for integrations that support temporarily overriding the mower's schedule, such as Gardena's `gardena_smart_system.start_override`.
+
+| Name                        |   Type   | Default      | Description                                                                                                                                  |
+| --------------------------- | :------: | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `name`                      | `string` | **Required** | Friendly name / tooltip of the button, i.e. `Start override`.                                                                                |
+| `service`                   | `string` | **Required** | A service to call, i.e. `gardena_smart_system.start_override`.                                                                               |
+| `durations`                 | `array`  | **Required** | Duration choices shown in the menu, in hours, i.e. `[1, 2, 3, 6]`.                                                                            |
+| `icon`                      | `string` | `mdi:timer-play-outline` | Icon for the button.                                                                                                              |
+| `target`                    | `object` | `{ entity_id: <card entity> }` | A `HassServiceTarget`, to define a target for the service call. Defaults to the card's `entity`.                                   |
+| `service_data`              | `object` | Optional     | Additional static `service_data` merged into every call (alongside the duration).                                                            |
+| `duration_attribute`        | `string` | `duration`   | Key used in `service_data` for the chosen duration value.                                                                                    |
+| `duration_seconds_per_hour` | `integer`| `3600`       | Multiplier used to convert the selected hours into the value sent to the service (e.g. keep `3600` to send seconds, or use `60` for minutes). |
+
+Example, matching Gardena's `start_override` service which expects a `duration` in seconds as a string:
+
+```yaml
+type: custom:lawn-mower-card
+entity: lawn_mower.sileno_lawn_mower
+override:
+  name: Start override
+  service: gardena_smart_system.start_override
+  durations: [1, 2, 3, 6]
+```
 
 ## Theming
 

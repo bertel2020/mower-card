@@ -182,6 +182,34 @@ export class LawnMowerCard extends LitElement {
     };
   }
 
+  // Calls the configured `override` service with the chosen duration (in
+  // hours) converted into the unit/attribute the service expects. Defaults
+  // match Gardena's `gardena_smart_system.start_override`, which targets the
+  // entity and expects a `duration` in seconds passed as a string.
+  private handleOverrideAction(hours: number) {
+    return () => {
+      const override = this.config.override;
+
+      if (!override) {
+        return;
+      }
+
+      const [domain, service] = override.service.split('.');
+      const durationAttribute = override.duration_attribute ?? 'duration';
+      const secondsPerHour = override.duration_seconds_per_hour ?? 3600;
+
+      this.hass.callService(
+        domain,
+        service,
+        {
+          ...override.service_data,
+          [durationAttribute]: String(hours * secondsPerHour),
+        },
+        override.target ?? { entity_id: this.config.entity },
+      );
+    };
+  }
+
   private getAttributes(entity: LawnMowerEntity) {
     // For the lawn_mower domain, the entity's state IS the activity
     // (mowing/paused/docked/returning/error/...). Some integrations
@@ -366,6 +394,34 @@ export class LawnMowerCard extends LitElement {
     `;
   }
 
+  // Renders an icon button that opens a small menu of duration choices (in
+  // hours, as configured via `override.durations`); picking one calls the
+  // configured service with that duration. Useful for integrations that
+  // support temporarily overriding the mower's schedule (e.g. Gardena's
+  // "start override" service).
+  private renderOverrideButton(): Template {
+    const override = this.config.override;
+
+    if (!override) {
+      return nothing;
+    }
+
+    return html`
+      <ha-button-menu @closed=${(e: Event) => e.stopPropagation()}>
+        <ha-icon-button slot="trigger" label="${override.name}">
+          <ha-icon icon="${override.icon ?? 'mdi:timer-play-outline'}"></ha-icon>
+        </ha-icon-button>
+        ${override.durations.map(
+          (hours) => html`
+            <mwc-list-item @click=${this.handleOverrideAction(hours)}>
+              ${hours} h
+            </mwc-list-item>
+          `,
+        )}
+      </ha-button-menu>
+    `;
+  }
+
   private renderToolbar(state: LawnMowerEntityState): Template {
     if (!this.config.show_toolbar) {
       return nothing;
@@ -463,7 +519,7 @@ export class LawnMowerCard extends LitElement {
             </ha-icon-button>
 
             <div class="fill-gap"></div>
-            ${buttons}
+            ${this.renderOverrideButton()} ${buttons}
           </div>
         `;
       }
