@@ -38,6 +38,27 @@ console.info(
   'color: green; background: white; font-weight: 700;',
 );
 
+// Mirrors Home Assistant's own battery icon selection (the frontend's
+// `batteryIcon` helper isn't exported via `custom-card-helpers`). Used as a
+// fallback so the battery icon reflects the charge level (e.g. for
+// integrations like Gardena that expose `battery_level` but no
+// `battery_icon` attribute), instead of always showing a static icon.
+function batteryStateIcon(level: number): string {
+  if (Number.isNaN(level)) {
+    return 'mdi:battery-unknown';
+  }
+
+  if (level <= 5) {
+    return 'mdi:battery-alert-variant-outline';
+  }
+
+  if (level >= 95) {
+    return 'mdi:battery';
+  }
+
+  return `mdi:battery-${Math.round(level / 10) * 10}`;
+}
+
 if (!customElements.get('ha-icon-button')) {
   customElements.define(
     'ha-icon-button',
@@ -256,7 +277,7 @@ export class LawnMowerCard extends LitElement {
     }
 
     return {
-      icon: battery_icon ?? 'mdi:battery',
+      icon: battery_icon ?? batteryStateIcon(Number(battery_level)),
       value: `${battery_level}%`,
       entityId: this.entity.entity_id,
     };
