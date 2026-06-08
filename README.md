@@ -1,5 +1,5 @@
 
-# Lawn Mower Card
+# Lawn Mower Card - Work in progress...
 
 
 > Lawn mower card for [Home Assistant][home-assistant] Lovelace UI
