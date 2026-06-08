@@ -51,6 +51,7 @@ export class LawnMowerCard extends LitElement {
 
   @state() private config!: LawnMowerCardConfig;
   @state() private requestInProgress = false;
+  @state() private overrideMenuOpen = false;
   @state() private thumbUpdater: ReturnType<typeof setInterval> | null = null;
 
   static get styles(): CSSResultGroup {
@@ -407,18 +408,36 @@ export class LawnMowerCard extends LitElement {
     }
 
     return html`
-      <ha-button-menu @closed=${(e: Event) => e.stopPropagation()}>
-        <ha-icon-button slot="trigger" label="${override.name}">
-          <ha-icon icon="${override.icon ?? 'mdi:timer-play-outline'}"></ha-icon>
+      <div class="override-menu" @click=${(e: Event) => e.stopPropagation()}>
+        <ha-icon-button
+          label="${override.name}"
+          @click=${() => {
+            this.overrideMenuOpen = !this.overrideMenuOpen;
+          }}
+        >
+          <ha-icon
+            icon="${override.icon ?? 'mdi:timer-play-outline'}"
+          ></ha-icon>
         </ha-icon-button>
-        ${override.durations.map(
-          (hours) => html`
-            <mwc-list-item @click=${this.handleOverrideAction(hours)}>
-              ${hours} h
-            </mwc-list-item>
-          `,
-        )}
-      </ha-button-menu>
+        ${this.overrideMenuOpen
+          ? html`
+              <ul class="override-menu-list">
+                ${override.durations.map(
+                  (hours) => html`
+                    <li
+                      @click=${() => {
+                        this.overrideMenuOpen = false;
+                        this.handleOverrideAction(hours)();
+                      }}
+                    >
+                      ${hours} h
+                    </li>
+                  `,
+                )}
+              </ul>
+            `
+          : nothing}
+      </div>
     `;
   }
 
@@ -546,7 +565,7 @@ export class LawnMowerCard extends LitElement {
     }
 
     return html`
-      <ha-card>
+      <ha-card @click=${() => (this.overrideMenuOpen = false)}>
         <ha-ripple></ha-ripple>
         <div class="preview">
           <div class="header">

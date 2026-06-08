@@ -316,3 +316,35 @@ ha-icon {
   color: var(--vc-toolbar-icon-color);
   display: flex;
 }
+
+.override-menu {
+  position: relative;
+  display: inline-flex;
+}
+
+.override-menu-list {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  z-index: 10;
+  margin: 0 0 4px;
+  padding: 4px 0;
+  list-style: none;
+  min-width: 88px;
+  background: var(--card-background-color, var(--vc-background, #fff));
+  border-radius: 8px;
+  box-shadow: var(--ha-card-box-shadow, 0 2px 6px rgba(0, 0, 0, 0.3));
+
+  & li {
+    padding: 10px 16px;
+    cursor: pointer;
+    color: var(--vc-primary-text-color);
+    white-space: nowrap;
+    transition: background-color 180ms ease-in-out;
+
+    &:hover,
+    &:focus-visible {
+      background-color: var(--secondary-background-color, rgba(0, 0, 0, 0.06));
+    }
+  }
+}
