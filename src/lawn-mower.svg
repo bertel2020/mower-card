@@ -1,0 +1,54 @@
+<svg width="490" height="360" viewBox="0 0 490 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Lawn -->
+  <rect x="0" y="300" width="490" height="60" fill="#cdebd2"/>
+  <path d="M0 300c40-14 80-14 120 0s80 14 120 0 80-14 120 0 80 14 130 0v10c-50 14-90 0-130-14s-80-14-120 0-80 14-120 0-80-14-120 0v-10Z" fill="#bfe6c7"/>
+
+  <!-- Mower shadow -->
+  <ellipse cx="245" cy="305" rx="150" ry="18" fill="#9bd2a6" opacity="0.6"/>
+
+  <!-- Mower body -->
+  <rect x="95" y="150" width="300" height="140" rx="36" fill="#3f8f4f"/>
+  <rect x="95" y="150" width="300" height="140" rx="36" fill="url(#bodyGradient)"/>
+
+  <!-- Top hood -->
+  <path d="M135 150c0-40 50-66 110-66s110 26 110 66H135Z" fill="#2f7a3f"/>
+  <path d="M135 150c0-40 50-66 110-66s110 26 110 66" stroke="#1f5c2c" stroke-width="3" fill="none"/>
+
+  <!-- Status / display panel -->
+  <rect x="205" y="172" width="80" height="40" rx="8" fill="#eafbee"/>
+  <circle cx="225" cy="192" r="6" fill="#3f8f4f"/>
+  <rect x="240" y="186" width="35" height="6" rx="3" fill="#bfe6c7"/>
+  <rect x="240" y="196" width="25" height="6" rx="3" fill="#bfe6c7"/>
+
+  <!-- Handle / antenna -->
+  <line x1="245" y1="84" x2="245" y2="60" stroke="#1f5c2c" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="245" cy="54" r="7" fill="#ffd166"/>
+
+  <!-- Wheels -->
+  <circle cx="150" cy="295" r="34" fill="#222"/>
+  <circle cx="150" cy="295" r="16" fill="#555"/>
+  <circle cx="340" cy="295" r="34" fill="#222"/>
+  <circle cx="340" cy="295" r="16" fill="#555"/>
+  <circle cx="120" cy="265" r="14" fill="#222"/>
+  <circle cx="370" cy="265" r="14" fill="#222"/>
+
+  <!-- Cutting deck hint -->
+  <rect x="160" y="270" width="170" height="14" rx="7" fill="#1f5c2c"/>
+
+  <!-- Grass blades being cut (decorative) -->
+  <g stroke="#3f8f4f" stroke-width="3" stroke-linecap="round">
+    <path d="M120 320v-14"/>
+    <path d="M140 322v-18"/>
+    <path d="M380 320v-12"/>
+    <path d="M360 322v-16"/>
+    <path d="M260 326v-10"/>
+    <path d="M280 324v-14"/>
+  </g>
+
+  <defs>
+    <linearGradient id="bodyGradient" x1="95" y1="150" x2="95" y2="290" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4ea65f"/>
+      <stop offset="1" stop-color="#3a8049"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,58 @@
+{
+  "status": {
+    "mowing": "Cortando a grama",
+    "paused": "Em pausa",
+    "idle": "Ocioso",
+    "stop": "Parado",
+    "charging": "Carregando",
+    "returning": "Retornando à base",
+    "returning_home": "Retornando à base",
+    "docked": "Na base",
+    "unknown": "Desconhecido",
+    "offline": "Fora de linha",
+    "error": "Erro",
+    "charger_disconnected": "Carregador desconectado",
+    "remote_control_active": "Controle remoto ativo",
+    "manual_mode": "Modo manual",
+    "shutting_down": "Desligando",
+    "updating": "Atualizando",
+    "going_to_target": "Indo ao destino"
+  },
+  "common": {
+    "name": "Cartão de cortador de grama",
+    "description": "O cartão de cortador de grama permite que você controle seu robô cortador de grama.",
+    "start": "Cortar",
+    "continue": "Continuar",
+    "pause": "Pausa",
+    "stop": "Parar",
+    "return_to_base": "Retornar à base",
+    "locate": "Localizar cortador de grama",
+    "not_available": "O cortador de grama não está disponível"
+  },
+  "error": {
+    "invalid_config": "Configuração inválida",
+    "missing_entity": "Entidade obrigatória"
+  },
+  "warning": {
+    "actions_array": "AVISO: 'actions' são reservadas para substituir as ações padrões para botões existentes. Se sua intenção era adicionar ações adicionais, use a opção 'shortcuts'."
+  },
+  "editor": {
+    "entity": "Entidade (Obrigatória)",
+    "battery_entity": "Entidade da bateria (Opcional)",
+    "map": "Mapa (Opcional)",
+    "image": "Imagem (Opcional)",
+    "compact_view": "Vista Compacta",
+    "compact_view_aria_label_on": "Ativar visualização compacta",
+    "compact_view_aria_label_off": "Desativar visualização compacta",
+    "show_name": "Mostrar nome",
+    "show_name_aria_label_on": "Mostrar nome",
+    "show_name_aria_label_off": "Ocultar nome",
+    "show_status": "Mostrar estado",
+    "show_status_aria_label_on": "Mostrar estado",
+    "show_status_aria_label_off": "Ocultar estado",
+    "show_toolbar": "Mostrar barra de ferramentas",
+    "show_toolbar_aria_label_on": "Mostrar barra de ferramentas",
+    "show_toolbar_aria_label_off": "Ocultar barra de ferramentas",
+    "code_only_note": "Nota: Ações e estatísticas estão disponiveis exclusivamente usando o editor de código."
+  }
+}

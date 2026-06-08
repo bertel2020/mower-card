@@ -1,0 +1,58 @@
+{
+  "status": {
+    "mowing": "Tunde iarba",
+    "paused": "Repauz",
+    "idle": "Inactiv",
+    "stop": "Oprit",
+    "charging": "Încărcare",
+    "returning": "Revenire Acasă",
+    "returning_home": "Se întoarce la bază",
+    "docked": "Parcat",
+    "unknown": "Necunoscut",
+    "offline": "Deconectat",
+    "error": "Eroare",
+    "charger_disconnected": "Încărcător deconectat",
+    "remote_control_active": "Control la distanță activ",
+    "manual_mode": "Mod manual",
+    "shutting_down": "Se oprește",
+    "updating": "Se actualizează",
+    "going_to_target": "Se îndreaptă către țintă"
+  },
+  "common": {
+    "name": "Card robot de tuns iarba",
+    "description": "Cardul robot de tuns iarba îți permite să controlezi robotul de tuns iarba.",
+    "start": "Tunde",
+    "continue": "Continuă",
+    "pause": "Repauz",
+    "stop": "Oprire",
+    "return_to_base": "Parchează",
+    "locate": "Localizează robotul de tuns iarba",
+    "not_available": "Robotul de tuns iarba nu este disponibil"
+  },
+  "error": {
+    "invalid_config": "Configurație invalidă",
+    "missing_entity": "Este necesară specificarea entității!"
+  },
+  "warning": {
+    "actions_array": "AVERTISMENT: 'actions' este rezervat pentru suprascrierea acțiunilor implicite ale butoanelor existente. Dacă intenția dvs. a fost să adăugați acțiuni suplimentare, folosiți în schimb opțiunea 'shortcuts'."
+  },
+  "editor": {
+    "entity": "Entitate (Necesar)",
+    "battery_entity": "Entitate baterie (Opțional)",
+    "map": "Camera Harta (Optional)",
+    "image": "Imagine (Optional)",
+    "compact_view": "Vizualizare compactă",
+    "compact_view_aria_label_on": "Pornește vizualizare compactă",
+    "compact_view_aria_label_off": "Oprește vizualizare compactă compact view off",
+    "show_name": "Arată Nume",
+    "show_name_aria_label_on": "Pornește arată nume",
+    "show_name_aria_label_off": "Oprește arată nume",
+    "show_status": "Arată Status",
+    "show_status_aria_label_on": "Pornește arată status",
+    "show_status_aria_label_off": "Oprește arată status",
+    "show_toolbar": "Arată bara de instrumente",
+    "show_toolbar_aria_label_on": "Pornește arată bara de instrumente",
+    "show_toolbar_aria_label_off": "Oprește arată bara de instrumente",
+    "code_only_note": "Notă: Acțiunile de setare și opțiunile de statistici sunt disponibile exclusiv folosind Editorul de cod."
+  }
+}

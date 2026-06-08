@@ -1,0 +1,58 @@
+{
+  "status": {
+    "mowing": "Koszenie",
+    "paused": "Wstrzymany",
+    "idle": "Bezczynny",
+    "stop": "Zatrzymany",
+    "charging": "Ładowanie",
+    "returning": "Powracanie",
+    "returning_home": "Powrót do bazy",
+    "docked": "Zadokowany",
+    "unknown": "Nieznany",
+    "offline": "Brak połączenia",
+    "error": "Błąd",
+    "charger_disconnected": "Ładowarka odłączona",
+    "remote_control_active": "Zdalne sterowanie",
+    "manual_mode": "Tryb manualny",
+    "shutting_down": "Wyłączanie",
+    "updating": "Aktualizowanie",
+    "going_to_target": "Podróż do celu"
+  },
+  "common": {
+    "name": "Karta kosiarki",
+    "description": "Karta kosiarki pozwala sterować robotem koszącym trawnik.",
+    "start": "Koś",
+    "continue": "Kontynuuj",
+    "pause": "Wstrzymaj",
+    "stop": "Zatrzymaj",
+    "return_to_base": "Powrót do bazy",
+    "locate": "Zlokalizuj kosiarkę",
+    "not_available": "Kosiarka jest niedostępna"
+  },
+  "error": {
+    "invalid_config": "Nieprawidłowa konfiguracja",
+    "missing_entity": "Ustawienie encji jest wymagane!"
+  },
+  "warning": {
+    "actions_array": "OSTRZEŻENIE: 'actions' jest zarezerwowane dla zmiany zachowania domyślnych akcji przycisków. Jeśli chcesz dodać dodatkowe akcje, użyj w zamian opcji 'shortcuts'."
+  },
+  "editor": {
+    "entity": "Encja (wymagane)",
+    "battery_entity": "Encja baterii (Opcjonalne)",
+    "map": "Kamera z mapą (opcjonalna)",
+    "image": "Obraz (opcjonalny)",
+    "compact_view": "Widok kompaktowy",
+    "compact_view_aria_label_on": "Włącz widok kompaktowy",
+    "compact_view_aria_label_off": "Wyłącz widok kompaktowy",
+    "show_name": "Pokaż nazwę",
+    "show_name_aria_label_on": "Włącz widok nazwy",
+    "show_name_aria_label_off": "Wyłącz widok nazwy",
+    "show_status": "Pokaż pasek statusu",
+    "show_status_aria_label_on": "Włącz widok paska statusu",
+    "show_status_aria_label_off": "Wyłącz widok paska statusu",
+    "show_toolbar": "Pasek narzędzi",
+    "show_toolbar_aria_label_on": "Włącz pasek narzędzi",
+    "show_toolbar_aria_label_off": "Wyłącz pasek narzędzi",
+    "code_only_note": "Uwaga: Ustawianie opcji i informacji statystyk jest dostępne tylko poprzez edytor kodu YAML."
+  }
+}

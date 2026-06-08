@@ -1,0 +1,58 @@
+{
+  "status": {
+    "mowing": "Tonte en cours",
+    "paused": "En pause",
+    "idle": "Inactif",
+    "stop": "Arrêté",
+    "charging": "En charge",
+    "returning": "Retour à la base",
+    "returning_home": "Retour à la base",
+    "docked": "À la base",
+    "unknown": "Inconnu",
+    "offline": "Hors ligne",
+    "error": "Erreur",
+    "charger_disconnected": "Chargeur déconnecté",
+    "remote_control_active": "Télécommande active",
+    "manual_mode": "Mode Manuel",
+    "shutting_down": "Arrêt",
+    "updating": "Mise à jour",
+    "going_to_target": "Déplacement vers la cible"
+  },
+  "common": {
+    "name": "Carte tondeuse",
+    "description": "La carte tondeuse vous permet de contrôler votre robot tondeuse.",
+    "start": "Tondre",
+    "continue": "Continuer",
+    "pause": "Mettre en pause",
+    "stop": "Arrêter",
+    "return_to_base": "Retour à la base",
+    "locate": "Localiser la tondeuse",
+    "not_available": "La tondeuse n'est pas disponible"
+  },
+  "error": {
+    "invalid_config": "Configuration invalide",
+    "missing_entity": "La spécification de l'entité est requise !"
+  },
+  "warning": {
+    "actions_array": "AVERTISSEMENT : « Actions » est réservé à la substitution des actions par défaut des boutons existants. Si vous souhaitez ajouter des actions supplémentaires, utilisez plutôt l'option « Raccourcis »."
+  },
+  "editor": {
+    "entity": "Entité (obligatoire)",
+    "battery_entity": "Entité de batterie (Facultatif)",
+    "map": "Caméra de carte (facultatif)",
+    "image": "Image (facultatif)",
+    "compact_view": "Vue compacte",
+    "compact_view_aria_label_on": "Activer la vue compacte",
+    "compact_view_aria_label_off": "Désactiver la vue compacte",
+    "show_name": "Afficher le nom",
+    "show_name_aria_label_on": "Activer affichage du nom",
+    "show_name_aria_label_off": "Désactiver affichage du nom",
+    "show_status": "Afficher l'état",
+    "show_status_aria_label_on": "Activer l'affichage de l'état",
+    "show_status_aria_label_off": "Désactiver l'affichage de l'état",
+    "show_toolbar": "Afficher la barre d'outils",
+    "show_toolbar_aria_label_on": "Activer l'affichage de la barre d'outils",
+    "show_toolbar_aria_label_off": "Désactiver l'affichage de la barre d'outils",
+    "code_only_note": "Remarque: Les options de réglage des actions et statistiques sont disponibles exclusivement en utilisant l'éditeur de code."
+  }
+}

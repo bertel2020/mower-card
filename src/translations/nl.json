@@ -1,0 +1,58 @@
+{
+  "status": {
+    "mowing": "Aan het maaien",
+    "paused": "Gepauzeerd",
+    "idle": "Inactief",
+    "stop": "Gestopt",
+    "charging": "Aan het opladen",
+    "returning": "Keert terug naar het basisstation",
+    "returning_home": "Keert terug naar het basisstation",
+    "docked": "Gedockt",
+    "unknown": "Onbekend",
+    "offline": "Niet verbonden",
+    "error": "Fout",
+    "charger_disconnected": "Lader losgekoppeld",
+    "remote_control_active": "Afstandsbediening actief",
+    "manual_mode": "Handmatige modus",
+    "shutting_down": "Uitschakelen",
+    "updating": "Bijwerken",
+    "going_to_target": "Onderweg naar doel"
+  },
+  "common": {
+    "name": "Grasmaaier-kaart",
+    "description": "Met de grasmaaier-kaart kun je je robotgrasmaaier bedienen.",
+    "start": "Maaien",
+    "continue": "Doorgaan",
+    "pause": "Pauze",
+    "stop": "Stoppen",
+    "return_to_base": "Terugkeren",
+    "locate": "Grasmaaier lokaliseren",
+    "not_available": "Grasmaaier is niet beschikbaar"
+  },
+  "error": {
+    "invalid_config": "Ongeldige configuratie",
+    "missing_entity": "Het specificeren van een entiteit is verplicht!"
+  },
+  "warning": {
+    "actions_array": "WAARSCHUWING: 'actions' is gereserveerd om standaardacties voor bestaande knoppen te overschrijven. Als uw bedoeling was om extra acties toe te voegen, gebruik dan de optie 'shortcuts' in plaats daarvan."
+  },
+  "editor": {
+    "entity": "Entiteit (Verplicht)",
+    "battery_entity": "Batterijentiteit (Optioneel)",
+    "map": "Kaart Camera (Optioneel)",
+    "image": "Afbeelding (Optioneel)",
+    "compact_view": "Compacte weergave",
+    "compact_view_aria_label_on": "Zet compacte weergave aan",
+    "compact_view_aria_label_off": "Zet compacte weergave uit",
+    "show_name": "Naam laten zien?",
+    "show_name_aria_label_on": "Zet weergavenaam aan",
+    "show_name_aria_label_off": "Zet weergavenaam uit",
+    "show_status": "Status tonen",
+    "show_status_aria_label_on": "Statusweergave inschakelen",
+    "show_status_aria_label_off": "Statusweergave uitschakelen",
+    "show_toolbar": "Werkbalk laten zien?",
+    "show_toolbar_aria_label_on": "Zet werkbalk aan",
+    "show_toolbar_aria_label_off": "Zet werkbalk uit",
+    "code_only_note": "Notitie: Instel acties en status opties zijn alleen beschikbaar in de Code Editor"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "status": {
+    "mowing": "כיסוח",
+    "paused": "מושהה",
+    "idle": "ממתין",
+    "stop": "נעצר",
+    "charging": "בטעינה",
+    "returning": "חוזר",
+    "returning_home": "חוזר לעמדה",
+    "docked": "בתחנה",
+    "unknown": "לא ידוע",
+    "offline": "מנותק",
+    "error": "שגיאה",
+    "charger_disconnected": "המטען מנותק",
+    "remote_control_active": "שליטה מרחוק פעילה",
+    "manual_mode": "מצב ידני",
+    "shutting_down": "כיבוי",
+    "updating": "עדכון",
+    "going_to_target": "נוסע ליעד"
+  },
+  "common": {
+    "name": "כרטיס מכסחת דשא",
+    "description": "כרטיס מכסחת הדשא מאפשר לך לשלוט ברובוט מכסחת הדשא שלך.",
+    "start": "כסח",
+    "continue": "המשך",
+    "pause": "השהה",
+    "stop": "עצור",
+    "return_to_base": "עגינה",
+    "locate": "אתר את המכסחה",
+    "not_available": "מכסחת הדשא אינה זמינה"
+  },
+  "error": {
+    "invalid_config": "תצורה לא תקינה",
+    "missing_entity": "יש צורך לציין ישות!"
+  },
+  "warning": {
+    "actions_array": "אזהרה: 'actions' שמור להחלפת פעולות ברירת המחדל של הכפתורים הקיימים. אם כוונתכם הייתה להוסיף פעולות נוספות, השתמשו באפשרות 'shortcuts' במקום זאת."
+  },
+  "editor": {
+    "entity": "ישות (נדרש)",
+    "battery_entity": "ישות סוללה (אופציונלי)",
+    "map": "מצלמת מפה (אפשרי)",
+    "image": "תמונה (אפשרי)",
+    "compact_view": "תצוגה קומפקטית",
+    "compact_view_aria_label_on": "החלף תצוגה קומפקטית",
+    "compact_view_aria_label_off": "כבה את התצוגה הקומפקטית",
+    "show_name": "שם תצוגה",
+    "show_name_aria_label_on": "הפעל את שם התצוגה למצב מופעל",
+    "show_name_aria_label_off": "כבה את שם התצוגה",
+    "show_status": "הצג סטטוס",
+    "show_status_aria_label_on": "הפעל את מצב התצוגה למצב פעיל",
+    "show_status_aria_label_off": "כבה את מצב התצוגה",
+    "show_toolbar": "הצג סרגל כלים",
+    "show_toolbar_aria_label_on": "הפעל את סרגל הכלים לתצוגה",
+    "show_toolbar_aria_label_off": "כבה את סרגל הכלים לתצוגה",
+    "code_only_note": "הערה: הגדרת פעולות ואפשרויות סטטיסטיקה זמינות אך ורק באמצעות עורך הקוד."
+  }
+}

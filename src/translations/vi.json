@@ -1,0 +1,58 @@
+{
+  "status": {
+    "mowing": "Đang cắt cỏ",
+    "paused": "Dừng",
+    "idle": "Nghỉ",
+    "stop": "Đã dừng",
+    "charging": "Đang sạc",
+    "returning": "Đang về đế",
+    "returning_home": "Đang về đế",
+    "docked": "Đang ở Dock",
+    "unknown": "Không rõ",
+    "offline": "Ngoại tuyến",
+    "error": "Lỗi",
+    "charger_disconnected": "Bộ sạc đã ngắt kết nối",
+    "remote_control_active": "Điều khiển từ xa đang hoạt động",
+    "manual_mode": "Chế độ thủ công",
+    "shutting_down": "Đang tắt",
+    "updating": "Đang cập nhật",
+    "going_to_target": "Đang đi đến mục tiêu"
+  },
+  "common": {
+    "name": "Thẻ máy cắt cỏ",
+    "description": "Thẻ máy cắt cỏ cho phép bạn điều khiển robot cắt cỏ của mình.",
+    "start": "Cắt cỏ",
+    "continue": "Tiếp tục",
+    "pause": "Tạm dừng",
+    "stop": "Dừng",
+    "return_to_base": "Về Dock",
+    "locate": "Định vị máy cắt cỏ",
+    "not_available": "Máy cắt cỏ không khả dụng"
+  },
+  "error": {
+    "invalid_config": "Cấu hình không hợp lệ",
+    "missing_entity": "Khai báo thiếu Entity"
+  },
+  "warning": {
+    "actions_array": "CẢNH BÁO: 'actions' được dành riêng để ghi đè các hành động mặc định của các nút hiện có. Nếu quý vị muốn thêm các hành động bổ sung, vui lòng dùng tùy chọn 'shortcuts' thay thế."
+  },
+  "editor": {
+    "entity": "Entity (Yêu cầu)",
+    "battery_entity": "Thực thể pin (Tùy chọn)",
+    "map": "Hiển thị sơ đồ   (Tuỳ chọn)",
+    "image": "Image (Tuỳ chọn)",
+    "compact_view": "Thu gọn",
+    "compact_view_aria_label_on": "Xem thu gọn",
+    "compact_view_aria_label_off": "Xem mở rộng",
+    "show_name": "Hiện tên",
+    "show_name_aria_label_on": "Hiện tên",
+    "show_name_aria_label_off": "Ẩn tên",
+    "show_status": "Hiện trạng thái",
+    "show_status_aria_label_on": "Hiện trạng thái",
+    "show_status_aria_label_off": "Ẩn trạng thái",
+    "show_toolbar": "Hiện thanh công cụ",
+    "show_toolbar_aria_label_on": "Hiện thanh công cụ",
+    "show_toolbar_aria_label_off": "Ẩn thanh công cụ",
+    "code_only_note": "Lưu ý: Cài đặt thao tác và tùy chọn thống kê chỉ có sẵn bằng trình chỉnh sửa mã"
+  }
+}

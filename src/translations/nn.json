@@ -1,0 +1,58 @@
+{
+  "status": {
+    "mowing": "Klipper plenen",
+    "paused": "Pausa",
+    "idle": "Tomgang",
+    "stop": "Stoppa",
+    "charging": "Ladar",
+    "returning": "Returnerer til basen",
+    "returning_home": "Returnerer til basen",
+    "docked": "Dokka",
+    "unknown": "Ukjend",
+    "offline": "Fråkopla",
+    "error": "Feil",
+    "charger_disconnected": "Ladaren er fråkopla",
+    "remote_control_active": "Fjernkontroll aktiv",
+    "manual_mode": "Manuell modus",
+    "shutting_down": "Slår seg av",
+    "updating": "Oppdaterer",
+    "going_to_target": "Går til mål"
+  },
+  "common": {
+    "name": "Gressklyppar-kort",
+    "description": "Gressklyppar-kortet lèt deg styre robotgressklypparen din.",
+    "start": "Klipp",
+    "continue": "Fortsett",
+    "pause": "Sett på pause",
+    "stop": "Stopp",
+    "return_to_base": "Dokk",
+    "locate": "Finn gressklyppar",
+    "not_available": "Gressklypparen er ikkje tilgjengeleg"
+  },
+  "error": {
+    "invalid_config": "Ugyldig konfigurasjon",
+    "missing_entity": "Spesifiserande oppføring kravd!"
+  },
+  "warning": {
+    "actions_array": "ÅTVARING: 'actions' er reservert for å overstyre standardhandlingar for eksisterande knappar. Dersom føremålet var å leggje til fleire handlingar, bruk i staden alternativet 'shortcuts'."
+  },
+  "editor": {
+    "entity": "Oppføring (påkravd)",
+    "battery_entity": "Batteri-eining (Valfri)",
+    "map": "Kartkamera (valfritt)",
+    "image": "Bilde (valfritt)",
+    "compact_view": "Kompakt vising",
+    "compact_view_aria_label_on": "Slå på kompakt vising",
+    "compact_view_aria_label_off": "Slå av kompakt vising",
+    "show_name": "Vis namn",
+    "show_name_aria_label_on": "Slå visingsnanet på",
+    "show_name_aria_label_off": "Slå visingsnamnet av",
+    "show_status": "Vis status",
+    "show_status_aria_label_on": "Slå skjermstatus på",
+    "show_status_aria_label_off": "Slå skjermstatus av",
+    "show_toolbar": "Vis verktøylinja",
+    "show_toolbar_aria_label_on": "Slå skjermverktøylinja på",
+    "show_toolbar_aria_label_off": "Slå skjermverktøylinja av",
+    "code_only_note": "Merk: Innstillingshandlingar og statistikkalternativ er berre tilgjengeleg ved hjelp av Code Editor."
+  }
+}

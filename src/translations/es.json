@@ -1,0 +1,58 @@
+{
+  "status": {
+    "mowing": "Cortando el césped",
+    "paused": "En pausa",
+    "idle": "Inactivo",
+    "stop": "Detenido",
+    "charging": "Cargando",
+    "returning": "Volviendo a la base",
+    "returning_home": "Volviendo a la base",
+    "docked": "En la base",
+    "unknown": "Desconocido",
+    "offline": "Sin conexión",
+    "error": "Fallo",
+    "charger_disconnected": "Cargador desconectado",
+    "remote_control_active": "Control remoto activo",
+    "manual_mode": "Modo manual",
+    "shutting_down": "Apagándose",
+    "updating": "Actualizando",
+    "going_to_target": "Dirigiéndose al objetivo"
+  },
+  "common": {
+    "name": "Tarjeta de robot cortacésped",
+    "description": "La tarjeta de cortacésped te permite controlar tu robot cortacésped.",
+    "start": "Cortar",
+    "continue": "Continuar",
+    "pause": "Pausar",
+    "stop": "Detener",
+    "return_to_base": "Volver a la base",
+    "locate": "Localizar cortacésped",
+    "not_available": "El cortacésped no está disponible"
+  },
+  "error": {
+    "invalid_config": "Configuración no válida",
+    "missing_entity": "¡Se requiere especificar una entidad!"
+  },
+  "warning": {
+    "actions_array": "ATENCIÓN: La opcion 'actions' está reservada para sobreescribir el comportamiento por defecto de los botones existentes. Si su intención es añadir acciones adicionales, debe utilizar la opcion 'shortcuts' en su lugar."
+  },
+  "editor": {
+    "entity": "Entidad (Requerido)",
+    "battery_entity": "Entidad de batería (Opcional)",
+    "map": "Map Camera (Opcional)",
+    "image": "Imagen (Opcional)",
+    "compact_view": "Vista compacta",
+    "compact_view_aria_label_on": "Activar vista compacta",
+    "compact_view_aria_label_off": "Desactivar vista compacta",
+    "show_name": "Nombre a mostrar",
+    "show_name_aria_label_on": "Mostrar nombre",
+    "show_name_aria_label_off": "Ocultar nombre",
+    "show_status": "Mostrar estado",
+    "show_status_aria_label_on": "Activar estado de la pantalla",
+    "show_status_aria_label_off": "Desactivar estado de la pantalla",
+    "show_toolbar": "Mostrar barra de herramientas",
+    "show_toolbar_aria_label_on": "Activar la barra de herramientas",
+    "show_toolbar_aria_label_off": "Desactivar la barra de herramientas",
+    "code_only_note": "Nota: La configuración de las acciones y estadísticas está únicamente disponible a través del Editor de Código."
+  }
+}

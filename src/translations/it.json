@@ -1,0 +1,58 @@
+{
+  "status": {
+    "mowing": "Taglio in corso",
+    "paused": "In pausa",
+    "idle": "Inattivo",
+    "stop": "Fermato",
+    "charging": "In carica",
+    "returning": "Rientro alla base",
+    "returning_home": "Rientro alla base",
+    "docked": "Alla base",
+    "unknown": "Sconosciuto",
+    "offline": "Non in linea",
+    "error": "Errore",
+    "charger_disconnected": "Caricatore scollegato",
+    "remote_control_active": "Controllo remoto attivo",
+    "manual_mode": "Modalità manuale",
+    "shutting_down": "Spegnimento",
+    "updating": "Aggiornamento",
+    "going_to_target": "In movimento verso la destinazione"
+  },
+  "common": {
+    "name": "Scheda rasaerba",
+    "description": "La scheda rasaerba ti consente di controllare il tuo robot rasaerba.",
+    "start": "Taglia",
+    "continue": "Continua",
+    "pause": "Pausa",
+    "stop": "Arresta",
+    "return_to_base": "Base",
+    "locate": "Localizza il rasaerba",
+    "not_available": "Il rasaerba non è disponibile"
+  },
+  "error": {
+    "invalid_config": "Configurazione non valida",
+    "missing_entity": "È necessario specificare l'entità!"
+  },
+  "warning": {
+    "actions_array": "AVVISO: 'actions' è riservato per sovrascrivere le azioni predefinite dei pulsanti esistenti. Se la vostra intenzione era aggiungere azioni aggiuntive, usate invece l'opzione 'shortcuts'."
+  },
+  "editor": {
+    "entity": "Entità (Richiesto)",
+    "battery_entity": "Entità batteria (Opzionale)",
+    "map": "Mappa (Opzionale)",
+    "image": "Immagine (Opzionale)",
+    "compact_view": "Vista compatta",
+    "compact_view_aria_label_on": "Attiva vista compatta",
+    "compact_view_aria_label_off": "Disattiva vista compatta",
+    "show_name": "Mostra Nome",
+    "show_name_aria_label_on": "Attiva nome",
+    "show_name_aria_label_off": "Disattiva nome",
+    "show_status": "Mostra Stato",
+    "show_status_aria_label_on": "Attiva stato",
+    "show_status_aria_label_off": "Disattiva stato",
+    "show_toolbar": "Mostra barra degli strumenti",
+    "show_toolbar_aria_label_on": "Attiva barra degli strumenti",
+    "show_toolbar_aria_label_off": "Disattiva barra degli strumenti",
+    "code_only_note": "NB: La configurazione di azioni e statistiche sono disponibili soltanto nell'editor di codice."
+  }
+}

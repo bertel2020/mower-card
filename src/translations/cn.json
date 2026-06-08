@@ -1,0 +1,58 @@
+{
+  "status": {
+    "mowing": "割草中",
+    "paused": "暂停中",
+    "idle": "闲置中",
+    "stop": "已停止",
+    "charging": "充电中",
+    "returning": "返回基座",
+    "returning_home": "返回基座",
+    "docked": "已在基座",
+    "unknown": "未知",
+    "offline": "离线",
+    "error": "错误",
+    "charger_disconnected": "充电器已断开",
+    "remote_control_active": "正在遥控",
+    "manual_mode": "手动模式",
+    "shutting_down": "关机",
+    "updating": "更新中",
+    "going_to_target": "前往目标"
+  },
+  "common": {
+    "name": "割草机卡片",
+    "description": "割草机卡片可让您控制割草机器人。",
+    "start": "开始割草",
+    "continue": "继续",
+    "pause": "暂停",
+    "stop": "停止",
+    "return_to_base": "回充",
+    "locate": "定位割草机",
+    "not_available": "割草机不可用"
+  },
+  "error": {
+    "invalid_config": "错误的设置",
+    "missing_entity": "必须指定一个实体!"
+  },
+  "warning": {
+    "actions_array": "警告: \"动作\" 是为了覆盖现有按钮的默认动作而保留的。如果你的目的是增加额外的动作，请使用\"快捷键\"选项来代替。"
+  },
+  "editor": {
+    "entity": "实体 (必填)",
+    "battery_entity": "电池实体（可选）",
+    "map": "地图 (选填)",
+    "image": "图片 (选填)",
+    "compact_view": "紧凑视图",
+    "compact_view_aria_label_on": "开启紧凑视图",
+    "compact_view_aria_label_off": "关闭紧凑视图",
+    "show_name": "显示名称",
+    "show_name_aria_label_on": "开启名称显示",
+    "show_name_aria_label_off": "关闭名称显示",
+    "show_status": "显示状态",
+    "show_status_aria_label_on": "开启状态显示",
+    "show_status_aria_label_off": "关闭状态显示",
+    "show_toolbar": "显示工具栏",
+    "show_toolbar_aria_label_on": "开启工具栏显示",
+    "show_toolbar_aria_label_off": "关闭工具栏显示",
+    "code_only_note": "注意: 设置动作和统计选项只能使用代码编辑器。"
+  }
+}

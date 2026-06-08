@@ -1,0 +1,58 @@
+{
+  "status": {
+    "mowing": "Klipper plenen",
+    "paused": "Pauset",
+    "idle": "Tomgang",
+    "stop": "Stoppet",
+    "charging": "Lader",
+    "returning": "Returnerer til basen",
+    "returning_home": "Returnerer til basen",
+    "docked": "Dokket",
+    "unknown": "Ukjent",
+    "offline": "Frakoblet",
+    "error": "Feil",
+    "charger_disconnected": "Laderen er frakoblet",
+    "remote_control_active": "Fjernkontroll aktiv",
+    "manual_mode": "Manuell modus",
+    "shutting_down": "Slår seg av",
+    "updating": "Oppdaterer",
+    "going_to_target": "Går til mål"
+  },
+  "common": {
+    "name": "Gressklipper-kort",
+    "description": "Gressklipper-kortet lar deg styre robotgressklipperen din.",
+    "start": "Klipp",
+    "continue": "fortsett",
+    "pause": "Paus",
+    "stop": "Stopp",
+    "return_to_base": "Til basen",
+    "locate": "Finn gressklipperen",
+    "not_available": "Gressklipperen er ikke tilgjengelig"
+  },
+  "error": {
+    "invalid_config": "Ugyldig konfigurasjon",
+    "missing_entity": "Spesifiserende enhet kreves!"
+  },
+  "warning": {
+    "actions_array": "ADVARSEL: 'actions' er reservert for å overstyre standardhandlinger for eksisterende knapper. Hvis hensikten var å legge til flere handlinger, bruk heller alternativet 'shortcuts'."
+  },
+  "editor": {
+    "entity": "Enhet (påkrevd)",
+    "battery_entity": "Batteri-entitet (Valgfritt)",
+    "map": "Kartkamera (valgfritt)",
+    "image": "Bilde (Valgfritt)",
+    "compact_view": "Kompakt visning",
+    "compact_view_aria_label_on": "Slå på kompakt visning",
+    "compact_view_aria_label_off": "Slå av kompakt visningf",
+    "show_name": "Vis navn",
+    "show_name_aria_label_on": "Slå visningsnavnet på",
+    "show_name_aria_label_off": "Slå visningsnavnet av",
+    "show_status": "Vis Status",
+    "show_status_aria_label_on": "Slå skjermstatus på",
+    "show_status_aria_label_off": "Slå skjermstatus av",
+    "show_toolbar": "Vis verktøylinjen",
+    "show_toolbar_aria_label_on": "Slå skjermverktøylinjen på",
+    "show_toolbar_aria_label_off": "Slå skjermverktøylinjen av",
+    "code_only_note": "Merk: Innstillingshandlinger og statistikkalternativer er eksklusivt tilgjengelige ved hjelp av Code Editor."
+  }
+}

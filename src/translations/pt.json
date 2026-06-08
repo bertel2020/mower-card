@@ -1,0 +1,58 @@
+{
+  "status": {
+    "mowing": "A cortar relva",
+    "paused": "Pausado",
+    "idle": "Inativo",
+    "stop": "Parado",
+    "charging": "A carregar",
+    "returning": "A regressar à base",
+    "returning_home": "A regressar à base",
+    "docked": "Na base",
+    "unknown": "Desconhecido",
+    "offline": "Sem ligação",
+    "error": "Erro",
+    "charger_disconnected": "Carregador desconectado",
+    "remote_control_active": "Controlo remoto ativo",
+    "manual_mode": "Modo manual",
+    "shutting_down": "A desligar",
+    "updating": "A atualizar",
+    "going_to_target": "A caminho do destino"
+  },
+  "common": {
+    "name": "Cartão de corta-relvas",
+    "description": "O cartão de corta-relvas permite-lhe controlar o seu robô corta-relvas.",
+    "start": "Cortar",
+    "continue": "Continuar",
+    "pause": "Pausar",
+    "stop": "Parar",
+    "return_to_base": "Base",
+    "locate": "Localizar corta-relvas",
+    "not_available": "O corta-relvas não está disponível"
+  },
+  "error": {
+    "invalid_config": "Configuração inválida",
+    "missing_entity": "Entidade especificada obrigatória!"
+  },
+  "warning": {
+    "actions_array": "AVISO: 'actions' está reservado para substituir ações padrão de botões existentes. Se a sua intenção era adicionar ações adicionais, utilize a opção 'shortcuts'."
+  },
+  "editor": {
+    "entity": "Entidade (Obrigatório)",
+    "battery_entity": "Entidade de bateria (Opcional)",
+    "map": "Mapa (Opcional)",
+    "image": "Imagem (Opcional)",
+    "compact_view": "Vista Compacta",
+    "compact_view_aria_label_on": "Ativar visualização compacta",
+    "compact_view_aria_label_off": "Desativar a visualização compacta",
+    "show_name": "Mostrar nome",
+    "show_name_aria_label_on": "Mostrar nome",
+    "show_name_aria_label_off": "Ocultar nome",
+    "show_status": "Mostrar estado",
+    "show_status_aria_label_on": "Mostrar estado",
+    "show_status_aria_label_off": "Ocultar estado",
+    "show_toolbar": "Mostrar barra de ferramentas",
+    "show_toolbar_aria_label_on": "Mostrar barra de ferramentas",
+    "show_toolbar_aria_label_off": "Ocultar barra de ferramentas",
+    "code_only_note": "Nota: Ações e estatísticas estão disponiveis exclusivamente usando o Editor de Código."
+  }
+}

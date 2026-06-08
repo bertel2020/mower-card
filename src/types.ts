@@ -1,0 +1,81 @@
+import {
+  HassEntityAttributeBase,
+  HassEntityBase,
+  HassServiceTarget,
+} from 'home-assistant-js-websocket';
+import { TemplateResult, nothing } from 'lit';
+
+export * from 'home-assistant-js-websocket';
+
+export type TemplateNothing = typeof nothing;
+export type Template = TemplateResult | TemplateNothing;
+
+export type LawnMowerEntityState =
+  | 'mowing'
+  | 'docked'
+  | 'paused'
+  | 'returning'
+  | 'error'
+  | 'unknown'
+  | string; // for other states
+
+export interface LawnMowerEntityAttributes extends HassEntityAttributeBase {
+  status?: LawnMowerEntityState;
+  state?: LawnMowerEntityState;
+  battery_level?: number;
+  battery_icon?: string;
+}
+
+export interface LawnMowerEntity extends HassEntityBase {
+  attributes: LawnMowerEntityAttributes;
+  state: LawnMowerEntityState;
+}
+
+export interface LawnMowerBatteryEntity extends HassEntityBase {
+  attributes: HassEntityAttributeBase;
+}
+
+export interface LawnMowerCardStat {
+  entity_id?: string;
+  attribute?: string;
+  value_template?: string;
+  unit?: string;
+  subtitle?: string;
+}
+
+export interface LawnMowerCardAction {
+  service: string;
+  service_data?: Record<string, unknown>;
+  target?: HassServiceTarget;
+}
+
+export interface LawnMowerCardShortcut {
+  name?: string;
+  icon?: string;
+  service?: string;
+  service_data?: Record<string, unknown>;
+  target?: HassServiceTarget;
+}
+
+export interface LawnMowerCardConfig {
+  entity: string;
+  battery_entity: string;
+  map: string;
+  map_refresh: number;
+  image: string;
+  show_name: boolean;
+  show_status: boolean;
+  show_toolbar: boolean;
+  compact_view: boolean;
+  stats: Record<string, LawnMowerCardStat[]>;
+  actions: Record<string, LawnMowerCardAction>;
+  shortcuts: LawnMowerCardShortcut[];
+}
+
+export interface LawnMowerServiceCallParams {
+  request: boolean;
+}
+
+export interface LawnMowerActionParams extends LawnMowerServiceCallParams {
+  defaultService?: string;
+}

@@ -1,0 +1,58 @@
+{
+  "status": {
+    "mowing": "Mäht",
+    "paused": "Pausiert",
+    "idle": "Untätig",
+    "stop": "Angehalten",
+    "charging": "Aufladen",
+    "returning": "Rückkehr zu Dockingstation",
+    "returning_home": "Rückkehr zu Dockingstation",
+    "docked": "Angedockt",
+    "unknown": "Unbekannt",
+    "offline": "Nicht verbunden",
+    "error": "Fehler",
+    "charger_disconnected": "Ladestation nicht angeschlossen",
+    "remote_control_active": "Fernsteuerung aktiv",
+    "manual_mode": "Manueller Modus",
+    "shutting_down": "Herunterfahren",
+    "updating": "Aktualisierung",
+    "going_to_target": "Fahrt zum Zielpunkt"
+  },
+  "common": {
+    "name": "Mähroboter-Karte",
+    "description": "Die Mähroboter-Karte ermöglicht es Ihnen, Ihren Mähroboter zu steuern.",
+    "start": "Mähen",
+    "continue": "Weiter",
+    "pause": "Pausieren",
+    "stop": "Stopp",
+    "return_to_base": "Zur Basis",
+    "locate": "Mähroboter lokalisieren",
+    "not_available": "Mähroboter ist nicht verfügbar"
+  },
+  "error": {
+    "invalid_config": "Ungeültige Konfiguration",
+    "missing_entity": "Angabe der Entität ist erforderlich!"
+  },
+  "warning": {
+    "actions_array": "WARNUNG: 'actions' ist dafür vorgesehen, die Standardaktionen für vorhandene Schaltflächen zu überschreiben. Wenn Sie zusätzliche Aktionen hinzufügen möchten, verwenden Sie stattdessen die Option 'shortcuts'."
+  },
+  "editor": {
+    "entity": "Entität (Erforderlich)",
+    "battery_entity": "Batterie-Entität (Optional)",
+    "map": "Kartenkamera (Optional)",
+    "image": "Bild (Optional)",
+    "compact_view": "kompakte Ansicht",
+    "compact_view_aria_label_on": "Schalte kompakte Ansicht ein",
+    "compact_view_aria_label_off": "Schalte kompakte Ansicht aus",
+    "show_name": "Zeige Namen",
+    "show_name_aria_label_on": "Schalte 'Zeige Namen' ein",
+    "show_name_aria_label_off": "Schalte 'Zeige Namen' aus",
+    "show_status": "Zeige Status",
+    "show_status_aria_label_on": "Schalte 'Zeige Status' ein",
+    "show_status_aria_label_off": "Schalte 'Zeige Status' aus",
+    "show_toolbar": "Zeige Toolbar",
+    "show_toolbar_aria_label_on": "Schalte 'Zeige Toolbar' ein",
+    "show_toolbar_aria_label_off": "Schalte 'Zeige Toolbar' aus",
+    "code_only_note": "Hinweis: Das Festlegen von Aktionen und Statistikoptionen ist ausschließlich mit dem Code-Editor möglich."
+  }
+}
