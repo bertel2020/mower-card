@@ -1,12 +1,6 @@
 
 # Lawn Mower Card
 
-[![npm version][npm-image]][npm-url]
-[![hacs][hacs-image]][hacs-url]
-[![GitHub Sponsors][gh-sponsors-image]][gh-sponsors-url]
-[![Patreon][patreon-image]][patreon-url]
-[![Buy Me A Coffee][buymeacoffee-image]][buymeacoffee-url]
-[![Twitter][twitter-image]][twitter-url]
 
 > Lawn mower card for [Home Assistant][home-assistant] Lovelace UI
 
