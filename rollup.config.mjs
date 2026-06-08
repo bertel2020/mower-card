@@ -71,7 +71,7 @@ const plugins = [
 export default {
   input: 'src/lawn-mower-card.ts',
   output: {
-    dir: 'dist',
+    file: 'dist/mower-card.js',
     format: 'es',
     inlineDynamicImports: true,
   },
