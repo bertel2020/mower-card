@@ -102,6 +102,7 @@ Here is what every option means:
 | `image`          | `string`  | `default`    | Path to image of your lawn mower. Better to have `png` or `svg`.                                           |
 | `show_name`      | `boolean` | `true`       | Show friendly name of the mower.                                                                           |
 | `show_status`    | `boolean` | `true`       | Show status of the mower.                                                                                  |
+| `status_attribute` | `string` | Optional   | Name of an entity attribute to display as the status instead of the mower's activity (`entity.state`). Some integrations (e.g. Gardena/Husqvarna) expose extra attributes such as `state` (device health, e.g. `OK`) or `activity` (e.g. `PARKED_PARK_SELECTED`) — pick one here if you'd rather see that than the default mowing activity (e.g. `docked`). Selectable via a dropdown in the visual editor; leave empty to use the default. |
 | `show_toolbar`   | `boolean` | `true`       | Show toolbar with actions.                                                                                 |
 | `compact_view`   | `boolean` | `false`      | Compact view without image.                                                                                |
 | `stats`          | `object`  | Optional     | Custom per state stats for your lawn mower                                                                 |

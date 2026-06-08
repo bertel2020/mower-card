@@ -27,7 +27,6 @@ export class LawnMowerCardEditor
   @state() private compact_view = false;
   @state() private show_name = true;
   @state() private show_status = true;
-  @state() private status_attribute? = '';
   @state() private show_toolbar = true;
 
   setConfig(config: LovelaceCardConfig & LawnMowerCardConfig): void {
@@ -51,6 +50,43 @@ export class LawnMowerCardEditor
       return [];
     }
     return Object.keys(this.hass.states[entityId].attributes);
+  }
+
+  // Dedicated handler for the status_attribute select. `mwc-select`'s
+  // `value` getter does not always reflect the just-clicked item by the
+  // time the `selected` event handler runs, which made the generic
+  // `valueChanged` (which reads `event.target.value`) appear to do nothing
+  // when picking an option. The `selected` event's `detail.index` is
+  // reported synchronously and reliably, so we use it to look up the
+  // chosen value from the same ordered option list rendered in the menu
+  // (an empty string for "default" followed by the entity's attributes).
+  private statusAttributeChanged(
+    event: CustomEvent,
+    options: string[],
+  ): void {
+    if (!this.config || !this.hass) {
+      return;
+    }
+
+    const index = (event.detail as { index?: number } | undefined)?.index;
+    const value =
+      typeof index === 'number' && index >= 0 && index < options.length
+        ? options[index]
+        : ((event.target as ConfigElement)?.value ?? '');
+
+    if ((this.config.status_attribute ?? '') === value) {
+      return;
+    }
+
+    const newConfig = { ...this.config };
+    if (!value) {
+      delete newConfig.status_attribute;
+    } else {
+      newConfig.status_attribute = value;
+    }
+    this.config = newConfig;
+
+    fireEvent(this, 'config-changed', { config: this.config });
   }
 
   protected render(): Template {
@@ -184,9 +220,9 @@ export class LawnMowerCardEditor
         <div class="option">
           <ha-select
             .label=${localize('editor.status_attribute')}
-            @selected=${this.valueChanged}
-            .configValue=${'status_attribute'}
-            .value=${this.config.status_attribute}
+            @selected=${(event: CustomEvent) =>
+              this.statusAttributeChanged(event, ['', ...statusAttributes])}
+            .value=${this.config.status_attribute ?? ''}
             @closed=${(e: Event) => e.stopPropagation()}
             fixedMenuPosition
             naturalMenuWidth
