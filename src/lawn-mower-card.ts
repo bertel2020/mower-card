@@ -183,11 +183,18 @@ export class LawnMowerCard extends LitElement {
   }
 
   private getAttributes(entity: LawnMowerEntity) {
-    const { status, state } = entity.attributes;
+    // For the lawn_mower domain, the entity's state IS the activity
+    // (mowing/paused/docked/returning/error/...). Some integrations
+    // (e.g. Gardena/Husqvarna) also expose a `status`/`state` attribute,
+    // but that reflects device health (e.g. "OK", "WARNING") rather than
+    // the mowing activity, so it must not override entity.state here.
+    const attributes = { ...entity.attributes };
+    delete attributes.status;
+    delete attributes.state;
 
     return {
-      ...entity.attributes,
-      status: status ?? state ?? entity.state,
+      ...attributes,
+      status: entity.state,
     };
   }
 
