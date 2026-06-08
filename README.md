@@ -6,7 +6,7 @@
 
 By default, Home Assistant does not provide any card for controlling robot lawn mowers. This card displays the state of your `lawn_mower` entity and allows you to control your robot.
 
-![Preview of lawn-mower-card][preview-image]
+<img width="568" height="499" alt="image" src="https://github.com/user-attachments/assets/3d1e8764-728c-49a1-a1c6-33170b3a5e7a" />
 
 ## Installing
 
