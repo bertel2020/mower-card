@@ -50,6 +50,8 @@
     "show_status": "Arată Status",
     "show_status_aria_label_on": "Pornește arată status",
     "show_status_aria_label_off": "Oprește arată status",
+    "status_attribute": "Atribut de stare (Opțional)",
+    "status_attribute_default": "Activitate de tuns (implicit)",
     "show_toolbar": "Arată bara de instrumente",
     "show_toolbar_aria_label_on": "Pornește arată bara de instrumente",
     "show_toolbar_aria_label_off": "Oprește arată bara de instrumente",

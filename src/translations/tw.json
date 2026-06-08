@@ -50,6 +50,8 @@
     "show_status": "顯示狀態",
     "show_status_aria_label_on": "開啟狀態顯示",
     "show_status_aria_label_off": "關閉狀態顯示",
+    "status_attribute": "狀態屬性(選用)",
+    "status_attribute_default": "割草活動(預設)",
     "show_toolbar": "顯示工具欄",
     "show_toolbar_aria_label_on": "開啟工具欄顯示",
     "show_toolbar_aria_label_off": "關閉工具欄顯示",

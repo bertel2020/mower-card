@@ -50,6 +50,8 @@
     "show_status": "ステータスを表示",
     "show_status_aria_label_on": "ステータスの表示をオンにする",
     "show_status_aria_label_off": "ステータスの表示をオフにする",
+    "status_attribute": "ステータス属性(オプション)",
+    "status_attribute_default": "芝刈り動作(デフォルト)",
     "show_toolbar": "ツールバーを表示",
     "show_toolbar_aria_label_on": "ツールバーの表示をオンにする",
     "show_toolbar_aria_label_off": "ツールバーの表示をオフにする",

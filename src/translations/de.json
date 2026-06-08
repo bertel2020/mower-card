@@ -50,6 +50,8 @@
     "show_status": "Zeige Status",
     "show_status_aria_label_on": "Schalte 'Zeige Status' ein",
     "show_status_aria_label_off": "Schalte 'Zeige Status' aus",
+    "status_attribute": "Status-Attribut (Optional)",
+    "status_attribute_default": "Mähaktivität (Standard)",
     "show_toolbar": "Zeige Toolbar",
     "show_toolbar_aria_label_on": "Schalte 'Zeige Toolbar' ein",
     "show_toolbar_aria_label_off": "Schalte 'Zeige Toolbar' aus",

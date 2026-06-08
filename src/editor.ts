@@ -27,6 +27,7 @@ export class LawnMowerCardEditor
   @state() private compact_view = false;
   @state() private show_name = true;
   @state() private show_status = true;
+  @state() private status_attribute? = '';
   @state() private show_toolbar = true;
 
   setConfig(config: LovelaceCardConfig & LawnMowerCardConfig): void {
@@ -45,6 +46,13 @@ export class LawnMowerCardEditor
     return Object.keys(this.hass.states).filter((id) => id.startsWith(type));
   }
 
+  private getEntityAttributes(entityId?: string): string[] {
+    if (!this.hass || !entityId || !this.hass.states[entityId]) {
+      return [];
+    }
+    return Object.keys(this.hass.states[entityId].attributes);
+  }
+
   protected render(): Template {
     if (!this.hass) {
       return nothing;
@@ -56,6 +64,7 @@ export class LawnMowerCardEditor
       ...this.getEntitiesByType('camera'),
       ...this.getEntitiesByType('image'),
     ];
+    const statusAttributes = this.getEntityAttributes(this.config.entity);
 
     return html`
       <div class="card-config">
@@ -170,6 +179,28 @@ export class LawnMowerCardEditor
           >
           </ha-switch>
           ${localize('editor.show_status')}
+        </div>
+
+        <div class="option">
+          <ha-select
+            .label=${localize('editor.status_attribute')}
+            @selected=${this.valueChanged}
+            .configValue=${'status_attribute'}
+            .value=${this.config.status_attribute}
+            @closed=${(e: Event) => e.stopPropagation()}
+            fixedMenuPosition
+            naturalMenuWidth
+          >
+            <mwc-list-item .value=${''}
+              >${localize('editor.status_attribute_default')}</mwc-list-item
+            >
+            ${statusAttributes.map(
+              (attribute) =>
+                html` <mwc-list-item .value=${attribute}
+                  >${attribute}</mwc-list-item
+                >`,
+            )}
+          </ha-select>
         </div>
 
         <div class="option">

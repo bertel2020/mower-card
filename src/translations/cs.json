@@ -50,6 +50,8 @@
     "show_status": "Zobraz status",
     "show_status_aria_label_on": "Zapni zobrazení statusu",
     "show_status_aria_label_off": "Vypni zobrazení statusu",
+    "status_attribute": "Atribut stavu (volitelné)",
+    "status_attribute_default": "Aktivita sekání (výchozí)",
     "show_toolbar": "Zobraz lištu",
     "show_toolbar_aria_label_on": "Zapni zobrazení lišty",
     "show_toolbar_aria_label_off": "Vypni zobrazení lišty",

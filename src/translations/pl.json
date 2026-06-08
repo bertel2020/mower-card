@@ -50,6 +50,8 @@
     "show_status": "Pokaż pasek statusu",
     "show_status_aria_label_on": "Włącz widok paska statusu",
     "show_status_aria_label_off": "Wyłącz widok paska statusu",
+    "status_attribute": "Atrybut statusu (opcjonalnie)",
+    "status_attribute_default": "Aktywność koszenia (domyślnie)",
     "show_toolbar": "Pasek narzędzi",
     "show_toolbar_aria_label_on": "Włącz pasek narzędzi",
     "show_toolbar_aria_label_off": "Wyłącz pasek narzędzi",

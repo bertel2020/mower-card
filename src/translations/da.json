@@ -50,6 +50,8 @@
     "show_status": "Vis Status",
     "show_status_aria_label_on": "Slå visning af status til",
     "show_status_aria_label_off": "Slå visning af status fra",
+    "status_attribute": "Statusattribut (valgfrit)",
+    "status_attribute_default": "Slåaktivitet (standard)",
     "show_toolbar": "Vis værktøjslinje",
     "show_toolbar_aria_label_on": "Slå visning af værktøjslinje til",
     "show_toolbar_aria_label_off": "Slå visning af værktøjslinje fra",

@@ -50,6 +50,8 @@
     "show_status": "הצג סטטוס",
     "show_status_aria_label_on": "הפעל את מצב התצוגה למצב פעיל",
     "show_status_aria_label_off": "כבה את מצב התצוגה",
+    "status_attribute": "תכונת סטטוס (אופציונלי)",
+    "status_attribute_default": "פעילות כיסוח (ברירת מחדל)",
     "show_toolbar": "הצג סרגל כלים",
     "show_toolbar_aria_label_on": "הפעל את סרגל הכלים לתצוגה",
     "show_toolbar_aria_label_off": "כבה את סרגל הכלים לתצוגה",

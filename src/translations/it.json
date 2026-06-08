@@ -50,6 +50,8 @@
     "show_status": "Mostra Stato",
     "show_status_aria_label_on": "Attiva stato",
     "show_status_aria_label_off": "Disattiva stato",
+    "status_attribute": "Attributo di stato (Opzionale)",
+    "status_attribute_default": "Attività di taglio (predefinito)",
     "show_toolbar": "Mostra barra degli strumenti",
     "show_toolbar_aria_label_on": "Attiva barra degli strumenti",
     "show_toolbar_aria_label_off": "Disattiva barra degli strumenti",

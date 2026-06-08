@@ -50,6 +50,8 @@
     "show_status": "Visa status",
     "show_status_aria_label_on": "Aktivera status",
     "show_status_aria_label_off": "Inaktivera status",
+    "status_attribute": "Statusattribut (valfritt)",
+    "status_attribute_default": "Klippaktivitet (standard)",
     "show_toolbar": "Visa verktygsvält",
     "show_toolbar_aria_label_on": "Aktivera verktygsfält",
     "show_toolbar_aria_label_off": "Inaktivera verktygsfält",

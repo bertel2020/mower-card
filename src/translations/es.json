@@ -50,6 +50,8 @@
     "show_status": "Mostrar estado",
     "show_status_aria_label_on": "Activar estado de la pantalla",
     "show_status_aria_label_off": "Desactivar estado de la pantalla",
+    "status_attribute": "Atributo de estado (Opcional)",
+    "status_attribute_default": "Actividad de corte (predeterminado)",
     "show_toolbar": "Mostrar barra de herramientas",
     "show_toolbar_aria_label_on": "Activar la barra de herramientas",
     "show_toolbar_aria_label_off": "Desactivar la barra de herramientas",

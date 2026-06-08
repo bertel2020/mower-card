@@ -50,6 +50,8 @@
     "show_status": "Állapot megjelenítése",
     "show_status_aria_label_on": "Állapot megjelenítésének bekapcsolása",
     "show_status_aria_label_off": "Állapot megjelenítésének kikapcsolása",
+    "status_attribute": "Állapot attribútum (Opcionális)",
+    "status_attribute_default": "Nyírási tevékenység (alapértelmezett)",
     "show_toolbar": "Eszköztár megjelenítése",
     "show_toolbar_aria_label_on": "Eszköztár megjelenítésének bekapcsolása",
     "show_toolbar_aria_label_off": "Eszköztár megjelenítésének kikapcsolása",

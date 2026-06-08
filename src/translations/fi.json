@@ -50,6 +50,8 @@
     "show_status": "Näytä tila",
     "show_status_aria_label_on": "Näyttönimi päällä",
     "show_status_aria_label_off": "Näyttönimi pois",
+    "status_attribute": "Tila-attribuutti (valinnainen)",
+    "status_attribute_default": "Leikkuutoiminto (oletus)",
     "show_toolbar": "Näytä työkalurivi",
     "show_toolbar_aria_label_on": "Työkalurivi päälle",
     "show_toolbar_aria_label_off": "Työkalurivi pois",

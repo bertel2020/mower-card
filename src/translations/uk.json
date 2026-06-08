@@ -50,6 +50,8 @@
     "show_status": "Показувати статус?",
     "show_status_aria_label_on": "Показати статус",
     "show_status_aria_label_off": "Приховати статус",
+    "status_attribute": "Атрибут статусу (необов'язково)",
+    "status_attribute_default": "Активність косіння (за замовчуванням)",
     "show_toolbar": "Показувати панель дій?",
     "show_toolbar_aria_label_on": "Показати панель дій",
     "show_toolbar_aria_label_off": "Приховати панель дій",

@@ -50,6 +50,8 @@
     "show_status": "Mostrar estado",
     "show_status_aria_label_on": "Mostrar estado",
     "show_status_aria_label_off": "Ocultar estado",
+    "status_attribute": "Atributo de status (Opcional)",
+    "status_attribute_default": "Atividade de corte (padrão)",
     "show_toolbar": "Mostrar barra de ferramentas",
     "show_toolbar_aria_label_on": "Mostrar barra de ferramentas",
     "show_toolbar_aria_label_off": "Ocultar barra de ferramentas",

@@ -50,6 +50,8 @@
     "show_status": "Status tonen",
     "show_status_aria_label_on": "Statusweergave inschakelen",
     "show_status_aria_label_off": "Statusweergave uitschakelen",
+    "status_attribute": "Statusattribuut (Optioneel)",
+    "status_attribute_default": "Maaiactiviteit (standaard)",
     "show_toolbar": "Werkbalk laten zien?",
     "show_toolbar_aria_label_on": "Zet werkbalk aan",
     "show_toolbar_aria_label_off": "Zet werkbalk uit",

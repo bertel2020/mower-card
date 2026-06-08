@@ -50,6 +50,8 @@
     "show_status": "Rodyti būseną",
     "show_status_aria_label_on": "Įjungti būsenos rodymą",
     "show_status_aria_label_off": "Išjungti būsenos rodymą",
+    "status_attribute": "Būsenos atributas (neprivaloma)",
+    "status_attribute_default": "Pjovimo veikla (numatytoji)",
     "show_toolbar": "Rodyti įrankių juostą",
     "show_toolbar_aria_label_on": "Įjungti įrankių juostos rodymą",
     "show_toolbar_aria_label_off": "Išjungti įrankių juostos rodymą",

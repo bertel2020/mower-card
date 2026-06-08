@@ -336,9 +336,19 @@ export class LawnMowerCard extends LitElement {
   }
 
   private renderStatus(): Template {
-    const { status } = this.getAttributes(this.entity);
+    const { status_attribute } = this.config;
+
+    // By default the lawn_mower activity (entity.state, e.g. mowing/docked)
+    // is shown. Some integrations expose additional raw attributes (e.g. a
+    // device-health "state"/"status" or an "activity" attribute) that the
+    // user may prefer to display instead — selectable via `status_attribute`.
+    const status =
+      status_attribute && status_attribute.length > 0
+        ? (get(this.entity.attributes, status_attribute) ?? this.entity.state)
+        : this.entity.state;
+    const statusText = String(status);
     const localizedStatus =
-      localize(`status.${status.toLowerCase()}`) || status;
+      localize(`status.${statusText.toLowerCase()}`) || statusText;
 
     if (!this.config.show_status) {
       return nothing;

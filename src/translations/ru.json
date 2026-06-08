@@ -50,6 +50,8 @@
     "show_status": "Показать статус?",
     "show_status_aria_label_on": "Показать статус",
     "show_status_aria_label_off": "Скрыть статус",
+    "status_attribute": "Атрибут статуса (необязательно)",
+    "status_attribute_default": "Активность кошения (по умолчанию)",
     "show_toolbar": "Показать панель действий?",
     "show_toolbar_aria_label_on": "Показать панель действий",
     "show_toolbar_aria_label_off": "Скрыть панель действий",

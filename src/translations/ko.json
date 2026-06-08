@@ -50,6 +50,8 @@
     "show_status": "상태 표시",
     "show_status_aria_label_on": "상태 표시 켜기",
     "show_status_aria_label_off": "상태 표시 끄기",
+    "status_attribute": "상태 속성 (선택 사항)",
+    "status_attribute_default": "잔디 깎기 활동 (기본값)",
     "show_toolbar": "툴바 표시",
     "show_toolbar_aria_label_on": "툴바 표시 켜기",
     "show_toolbar_aria_label_off": "툴바 표시 끄기",

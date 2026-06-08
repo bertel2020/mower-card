@@ -50,6 +50,8 @@
     "show_status": "Afficher l'état",
     "show_status_aria_label_on": "Activer l'affichage de l'état",
     "show_status_aria_label_off": "Désactiver l'affichage de l'état",
+    "status_attribute": "Attribut de statut (Facultatif)",
+    "status_attribute_default": "Activité de tonte (par défaut)",
     "show_toolbar": "Afficher la barre d'outils",
     "show_toolbar_aria_label_on": "Activer l'affichage de la barre d'outils",
     "show_toolbar_aria_label_off": "Désactiver l'affichage de la barre d'outils",

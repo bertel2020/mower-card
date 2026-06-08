@@ -65,6 +65,7 @@ export interface LawnMowerCardConfig {
   image: string;
   show_name: boolean;
   show_status: boolean;
+  status_attribute: string;
   show_toolbar: boolean;
   compact_view: boolean;
   stats: Record<string, LawnMowerCardStat[]>;

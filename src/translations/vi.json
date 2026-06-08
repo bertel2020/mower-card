@@ -50,6 +50,8 @@
     "show_status": "Hiện trạng thái",
     "show_status_aria_label_on": "Hiện trạng thái",
     "show_status_aria_label_off": "Ẩn trạng thái",
+    "status_attribute": "Thuộc tính trạng thái (Tùy chọn)",
+    "status_attribute_default": "Hoạt động cắt cỏ (mặc định)",
     "show_toolbar": "Hiện thanh công cụ",
     "show_toolbar_aria_label_on": "Hiện thanh công cụ",
     "show_toolbar_aria_label_off": "Ẩn thanh công cụ",

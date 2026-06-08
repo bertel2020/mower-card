@@ -50,6 +50,8 @@
     "show_status": "Mostrar estat",
     "show_status_aria_label_on": "Mostra estat",
     "show_status_aria_label_off": "Amaga estat",
+    "status_attribute": "Atribut d'estat (opcional)",
+    "status_attribute_default": "Activitat de tall (per defecte)",
     "show_toolbar": "Mostrar barra d'eines",
     "show_toolbar_aria_label_on": "Mostra barra d'eines",
     "show_toolbar_aria_label_off": "Amaga barra d'eines",
