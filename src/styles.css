@@ -297,7 +297,14 @@ ha-icon {
   align-items: center;
   margin-right: 10px;
   padding: 15px 10px;
+  border-radius: 8px;
   cursor: pointer;
+  transition: background-color 180ms ease-in-out;
+
+  &:hover,
+  &:focus-visible {
+    background-color: var(--secondary-background-color, rgba(0, 0, 0, 0.06));
+  }
 
   & ha-icon {
     margin-right: 5px;
