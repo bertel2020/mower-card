@@ -248,6 +248,7 @@ This card supports translations. Please, help to add more translations and impro
 
 This card relies on the standard `lawn_mower` services, like `start_mowing`, `pause` and `dock`. It should work with any integration that exposes a `lawn_mower` entity, e.g.:
 
+- **Gardena** Sileno Smart (via Gardena Smart System integration)
 - **Husqvarna** Automower (via the official Husqvarna Automower integration)
 - **Worx** Landroid (via the Worx Landroid / WorxCloud integration)
 - **Segway Navimow** (via the NavimowHA custom integration)
@@ -255,9 +256,6 @@ This card relies on the standard `lawn_mower` services, like `start_mowing`, `pa
 - **MQTT**-based lawn mowers (via the MQTT lawn mower integration)
 - Any other integration that provides a `lawn_mower` entity
 
-If this card works with your lawn mower, please open a PR and add your model to the list.
-
-- [_Your mower?_][edit-readme]
 
 ## Development
 
@@ -279,21 +277,6 @@ Huge thanks for their ideas and efforts 👍
 
 MIT © [Denys Dovhan][denysdovhan]
 
-<!-- Badges -->
-
-[npm-url]: https://npmjs.org/package/lawn-mower-card
-[npm-image]: https://img.shields.io/npm/v/lawn-mower-card.svg?style=flat-square
-[hacs-url]: https://github.com/hacs/integration
-[hacs-image]: https://img.shields.io/badge/hacs-default-orange.svg?style=flat-square
-[gh-sponsors-url]: https://github.com/sponsors/denysdovhan
-[gh-sponsors-image]: https://img.shields.io/github/sponsors/denysdovhan?style=flat-square
-[patreon-url]: https://patreon.com/denysdovhan
-[patreon-image]: https://img.shields.io/badge/support-patreon-F96854.svg?style=flat-square
-[buymeacoffee-url]: https://patreon.com/denysdovhan
-[buymeacoffee-image]: https://img.shields.io/badge/support-buymeacoffee-222222.svg?style=flat-square
-[twitter-url]: https://x.com/denysdovhan
-[twitter-image]: https://img.shields.io/badge/follow-%40denysdovhan-000000.svg?style=flat-square
-
 <!-- References -->
 
 [home-assistant]: https://www.home-assistant.io/
@@ -309,4 +292,4 @@ MIT © [Denys Dovhan][denysdovhan]
 [vacuum-card]: https://github.com/denysdovhan/vacuum-card
 [macbury-smart-house]: https://macbury.github.io/SmartHouse/HomeAssistant/Vacuum/
 [bbbenji-card]: https://gist.github.com/bbbenji/24372e423f8669b2e6713638d8f8ceb2
-[denysdovhan]: https://denysdovhan.com
+
