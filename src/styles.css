@@ -58,34 +58,6 @@ ha-card {
     }
   }
 
-  & .dropdown-tip {
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-  }
-
-  & .dropdown-trigger {
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    background: transparent;
-    border: 0;
-    color: var(--vc-secondary-text-color);
-    cursor: pointer;
-    font: inherit;
-    line-height: 1;
-    padding: 0;
-  }
-
-  & .dropdown-trigger:focus-visible {
-    outline: 2px solid var(--primary-color);
-    outline-offset: 2px;
-  }
-
-  & .dropdown-trigger-arrow {
-    --mdc-icon-size: 18px;
-  }
-
   & .tip-title {
     display: inline-block;
     line-height: 1;
@@ -232,12 +204,6 @@ ha-card {
   font-size: 16px;
 }
 
-.not-available .offline {
-  text-align: center;
-  color: var(--vc-primary-text-color);
-  font-size: 16px;
-}
-
 .metadata {
   margin: var(--vc-spacing) auto;
 }
@@ -260,6 +226,11 @@ ha-card {
   &:last-of-type {
     border-right: 0px;
   }
+}
+
+.stats-subtitle {
+  color: var(--vc-secondary-text-color);
+  font-size: 12px;
 }
 
 .stats-value {
