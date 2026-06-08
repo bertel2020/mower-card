@@ -45,124 +45,13 @@ export class LawnMowerCardEditor
     return Object.keys(this.hass.states).filter((id) => id.startsWith(type));
   }
 
-  private getEntityAttributes(entityId?: string): string[] {
-    if (!this.hass || !entityId || !this.hass.states[entityId]) {
-      return [];
-    }
-    return Object.keys(this.hass.states[entityId].attributes);
-  }
-
-  // Dedicated handler for the status_attribute select. `mwc-select`'s
-  // `value` getter does not always reflect the just-clicked item by the
-  // time the `selected` event handler runs, which made the generic
-  // `valueChanged` (which reads `event.target.value`) appear to do nothing
-  // when picking an option. The `selected` event's `detail.index` is
-  // reported synchronously and reliably, so we use it to look up the
-  // chosen value from the same ordered option list rendered in the menu
-  // (an empty string for "default" followed by the entity's attributes).
-  private statusAttributeChanged(
-    event: CustomEvent,
-    options: string[],
-  ): void {
-    if (!this.config || !this.hass) {
-      return;
-    }
-
-    const index = (event.detail as { index?: number } | undefined)?.index;
-    const value =
-      typeof index === 'number' && index >= 0 && index < options.length
-        ? options[index]
-        : ((event.target as ConfigElement)?.value ?? '');
-
-    if ((this.config.status_attribute ?? '') === value) {
-      return;
-    }
-
-    const newConfig = { ...this.config };
-    if (!value) {
-      delete newConfig.status_attribute;
-    } else {
-      newConfig.status_attribute = value;
-    }
-    this.config = newConfig;
-
-    fireEvent(this, 'config-changed', { config: this.config });
-  }
-
   protected render(): Template {
     if (!this.hass) {
       return nothing;
     }
 
-    const mowerEntities = this.getEntitiesByType('lawn_mower');
-    const batteryEntities = this.getEntitiesByType('sensor');
-    const cameraEntities = [
-      ...this.getEntitiesByType('camera'),
-      ...this.getEntitiesByType('image'),
-    ];
-    const statusAttributes = this.getEntityAttributes(this.config.entity);
-
     return html`
       <div class="card-config">
-        <div class="option">
-          <ha-select
-            .label=${localize('editor.entity')}
-            @selected=${this.valueChanged}
-            .configValue=${'entity'}
-            .value=${this.config.entity}
-            @closed=${(e: Event) => e.stopPropagation()}
-            fixedMenuPosition
-            naturalMenuWidth
-            required
-            validationMessage=${localize('error.missing_entity')}
-          >
-            ${mowerEntities.map(
-              (entity) =>
-                html` <mwc-list-item .value=${entity}
-                  >${entity}</mwc-list-item
-                >`,
-            )}
-          </ha-select>
-        </div>
-
-        <div class="option">
-          <ha-select
-            .label=${localize('editor.battery_entity')}
-            @selected=${this.valueChanged}
-            .configValue=${'battery_entity'}
-            .value=${this.config.battery_entity}
-            @closed=${(e: Event) => e.stopPropagation()}
-            fixedMenuPosition
-            naturalMenuWidth
-          >
-            ${batteryEntities.map(
-              (entity) =>
-                html` <mwc-list-item .value=${entity}
-                  >${entity}</mwc-list-item
-                >`,
-            )}
-          </ha-select>
-        </div>
-
-        <div class="option">
-          <ha-select
-            .label=${localize('editor.map')}
-            @selected=${this.valueChanged}
-            .configValue=${'map'}
-            .value=${this.config.map}
-            @closed=${(e: Event) => e.stopPropagation()}
-            fixedMenuPosition
-            naturalMenuWidth
-          >
-            ${cameraEntities.map(
-              (entity) =>
-                html` <mwc-list-item .value=${entity}
-                  >${entity}</mwc-list-item
-                >`,
-            )}
-          </ha-select>
-        </div>
-
         <div class="option">
           <paper-input
             label="${localize('editor.image')}"
@@ -215,28 +104,6 @@ export class LawnMowerCardEditor
           >
           </ha-switch>
           ${localize('editor.show_status')}
-        </div>
-
-        <div class="option">
-          <ha-select
-            .label=${localize('editor.status_attribute')}
-            @selected=${(event: CustomEvent) =>
-              this.statusAttributeChanged(event, ['', ...statusAttributes])}
-            .value=${this.config.status_attribute ?? ''}
-            @closed=${(e: Event) => e.stopPropagation()}
-            fixedMenuPosition
-            naturalMenuWidth
-          >
-            <mwc-list-item .value=${''}
-              >${localize('editor.status_attribute_default')}</mwc-list-item
-            >
-            ${statusAttributes.map(
-              (attribute) =>
-                html` <mwc-list-item .value=${attribute}
-                  >${attribute}</mwc-list-item
-                >`,
-            )}
-          </ha-select>
         </div>
 
         <div class="option">
