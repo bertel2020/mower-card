@@ -267,29 +267,6 @@ First of all, thanks! Check [contributing guideline](./CONTRIBUTING.md) for more
 
 This project is heavily inspired by:
 
-- [denysdovhan/vacuum-card][vacuum-card] — this lawn mower card started its life as a fork/adaptation of the excellent vacuum card for Home Assistant.
-- [MacBury Smart House][macbury-smart-house] — basically, the original vacuum card project is a refinement of MacBury's custom card.
-- [Benji][bbbenji-card] vacuum card — where the original card design was first noticed, [first time](https://github.com/bbbenji/synthwave-hass/issues/29).
+- [denysdovhan/vacuum-card][vacuum-card] — this lawn mower card started its life as a fork/adaptation of the excellent vacuum card for Home Assistant. Huge thanks for the idea and efforts 👍
 
-Huge thanks for their ideas and efforts 👍
-
-## License
-
-MIT © [Denys Dovhan][denysdovhan]
-
-<!-- References -->
-
-[home-assistant]: https://www.home-assistant.io/
-[hacs]: https://hacs.xyz
-[preview-image]: https://github.com/denysdovhan/vacuum-card/assets/3459374/43808d3d-65a4-4e65-9531-4f248fa8861c
-[cleaning-gif]: https://user-images.githubusercontent.com/3459374/81119202-fa60b500-8f32-11ea-9b23-325efa93d7ab.gif
-[returning-gif]: https://user-images.githubusercontent.com/3459374/81119452-765afd00-8f33-11ea-9dc5-9c26ba3f8c45.gif
-[latest-release]: https://github.com/bertel2020/mower-card/releases/latest
-[ha-scripts]: https://www.home-assistant.io/docs/scripts/
-[edit-readme]: https://github.com/bertel2020/mower-card/edit/main/README.md
-[card-mod]: https://github.com/thomasloven/lovelace-card-mod
-[add-translation]: https://github.com/bertel2020/mower-card/blob/master/CONTRIBUTING.md#how-to-add-translation
-[vacuum-card]: https://github.com/denysdovhan/vacuum-card
-[macbury-smart-house]: https://macbury.github.io/SmartHouse/HomeAssistant/Vacuum/
-[bbbenji-card]: https://gist.github.com/bbbenji/24372e423f8669b2e6713638d8f8ceb2
 
